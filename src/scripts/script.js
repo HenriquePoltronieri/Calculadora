@@ -23,7 +23,7 @@ function calculate() {
     const display = document.querySelector('#display');
 
     try {
-        display.value = eval(display.value);
+        display.value = eval(display.value).toFixed(3);
     } catch {
         display.value = 'Error';
     }

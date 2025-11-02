@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s;
 }
 
 body {
@@ -69,4 +70,21 @@ button:hover {
     grid-row: 4 / 6;
     height: 100%;
     grid-column: 4;
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        padding: 20px;
+    }
+
+    #display {
+        height: 45px;
+        font-size: 18px;
+    }
+
+    button {
+        height: 50px;
+        width: 50px;
+        font-size: 16px;
+    }
 }
